@@ -1,13 +1,9 @@
-/*
- Highcharts JS v10.2.0 (2022-07-05)
-
- Arrow Symbols
-
- (c) 2017-2021 Lars A. V. Cabrera
-
- License: www.highcharts.com/license
-*/
-(function(a){"object"===typeof module&&module.exports?(a["default"]=a,module.exports=a):"function"===typeof define&&define.amd?define("highcharts/modules/arrow-symbols",["highcharts"],function(b){a(b);a.Highcharts=b;return a}):a("undefined"!==typeof Highcharts?Highcharts:void 0)})(function(a){function b(a,f,b,g){a.hasOwnProperty(f)||(a[f]=g.apply(null,b),"function"===typeof CustomEvent&&window.dispatchEvent(new CustomEvent("HighchartsModuleLoaded",{detail:{path:f,module:a[f]}})))}a=a?a._modules:{};
-b(a,"Extensions/ArrowSymbols.js",[a["Core/Renderer/SVG/SVGRenderer.js"]],function(a){function b(a,d,b,c){return[["M",a,d+c/2],["L",a+b,d],["L",a,d+c/2],["L",a+b,d+c]]}function h(a,b,e,c){return[["M",a+e,b],["L",a,b+c/2],["L",a+e,b+c],["Z"]]}function g(a,b,e,c){return h(a,b,e/2,c)}a=a.prototype.symbols;a.arrow=b;a["arrow-filled"]=h;a["arrow-filled-half"]=g;a["arrow-half"]=function(a,d,e,c){return b(a,d,e/2,c)};a["triangle-left"]=h;a["triangle-left-half"]=g;return a});b(a,"masters/modules/arrow-symbols.src.js",
-[],function(){})});
-//# sourceMappingURL=arrow-symbols.js.map
+!/**
+ * Highcharts JS v11.4.8 (2024-08-29)
+ *
+ * Arrow Symbols
+ *
+ * (c) 2017-2024 Lars A. V. Cabrera
+ *
+ * License: www.highcharts.com/license
+ */function(e){"object"==typeof module&&module.exports?(e.default=e,module.exports=e):"function"==typeof define&&define.amd?define("highcharts/modules/arrow-symbols",["highcharts"],function(o){return e(o),e.Highcharts=o,e}):e("undefined"!=typeof Highcharts?Highcharts:void 0)}(function(e){"use strict";var o=e?e._modules:{};function t(o,t,n,r){o.hasOwnProperty(t)||(o[t]=r.apply(null,n),"function"==typeof CustomEvent&&e.win.dispatchEvent(new CustomEvent("HighchartsModuleLoaded",{detail:{path:t,module:o[t]}})))}t(o,"Extensions/ArrowSymbols.js",[],function(){function e(e,o,t,n){return[["M",e,o+n/2],["L",e+t,o],["L",e,o+n/2],["L",e+t,o+n]]}function o(o,t,n,r){return e(o,t,n/2,r)}function t(e,o,t,n){return[["M",e+t,o],["L",e,o+n/2],["L",e+t,o+n],["Z"]]}function n(e,o,n,r){return t(e,o,n/2,r)}return{compose:function(r){let s=r.prototype.symbols;s.arrow=e,s["arrow-filled"]=t,s["arrow-filled-half"]=n,s["arrow-half"]=o,s["triangle-left"]=t,s["triangle-left-half"]=n}}}),t(o,"masters/modules/arrow-symbols.src.js",[o["Core/Globals.js"],o["Extensions/ArrowSymbols.js"]],function(e,o){return o.compose(e.SVGRenderer),e})});
